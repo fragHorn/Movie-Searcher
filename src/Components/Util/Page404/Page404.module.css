@@ -1,0 +1,13 @@
+#error{
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(236, 231, 231, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#errImage{
+    height: 100%;
+    width: 80%;
+}

@@ -3,7 +3,7 @@ import classes from './Paging.module.css';
 
 const paging = props => {
     return (
-        <button onClick = {props.click}
+        <button className = {classes.page} onClick = {props.click}
             disabled = {props.disabled}>
             {props.pageNumber}
         </button>

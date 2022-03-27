@@ -1,0 +1,18 @@
+#error{
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(236, 231, 231, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#errP{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#errImage{
+    height: 100px;
+    width: 100px;
+}

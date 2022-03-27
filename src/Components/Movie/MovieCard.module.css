@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+.outer{
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.poster{
+    height: 300px;
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+.movie-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

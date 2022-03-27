@@ -3,3 +3,15 @@ body{
    width:98vw; 
    overflow-x: hidden;
 }
+
+#outer-main{
+   width: 80%;
+   margin:auto;
+}
+
+
+#input-container{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}

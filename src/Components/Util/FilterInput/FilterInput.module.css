@@ -1,0 +1,24 @@
+#filter{
+    width: 13%;
+    height: 15px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(223, 219, 219);
+    appearance: none;
+    background: transparent url("./filter.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: 20% 60%;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+#filter:focus{
+    /* border: 1px solid blue; */
+    outline: none;
+    box-shadow: 0px 0px 10px 10px rgb(235, 249, 255);
+}
+#filter::placeholder{
+    color: rgb(218, 218, 218);
+}

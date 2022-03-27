@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import Error from '../Util/Error/Error';
+import MovieInfo from './MovieInfo';
 import { useParams } from 'react-router-dom';
 
 const Movie = props => {
@@ -11,17 +12,18 @@ const Movie = props => {
         axios.get(`https://movie-task.vercel.app/api/movie?movieId=${id}`)
         .then(res => {
             setData(res.data.data);
+            setError('');
         })
         .catch(err => {
             setError(err);
         })
     }, []);
 
-    console.log(data);
+    // console.log(data);
 
     return (
         <div>
-            {error ? <Error err = {error}/> : <h1>Movie</h1>}
+            {error !== '' ? <Error err = {error}/> : <MovieInfo {...data}/>}
         </div>
     )
 }

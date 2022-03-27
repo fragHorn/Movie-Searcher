@@ -1,17 +1,19 @@
 import React from "react";
-import classes from './Spinner.module.css';
+import styles from './Spinner.module.css';
 
 const spinner = () => {
   return (
-    <div className={classes["lds-roller"]}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div id = {styles.backdrop}>
+      <div className={styles["lds-roller"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
