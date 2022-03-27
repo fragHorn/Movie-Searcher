@@ -89,6 +89,10 @@ function App() {
     }
   }, [filterByYear]);
 
+  useEffect(() => {
+    window.scrollTo({ behavior: 'smooth', top: '0px' });
+  }, [currentPage]);
+
   const search = (event) => {
     setSearchQuery(event.target.value);
   }

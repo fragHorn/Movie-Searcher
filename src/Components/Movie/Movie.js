@@ -16,7 +16,8 @@ const Movie = props => {
         })
         .catch(err => {
             setError(err);
-        })
+        });
+        window.scrollTo({ behavior: 'smooth', top: '0px' });
     }, []);
 
     // console.log(data);
